@@ -1,4 +1,5 @@
 #!/bin/sh
+# SPDX-License-Identifier: GPL-2.0-or-later
 # mbserver: start and stop MAXIBOOST ON's LAN matching server (gvnet-server, the matching server
 # from GUNDAM VERSUS' port) by hand, like GODZILLA's gzserver. The PCs' launchers join it at
 # <this PC>:31333 ("Over the network: join").

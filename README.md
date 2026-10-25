@@ -38,13 +38,18 @@ This is a matching server for people who already know each other, not a PSN repl
 
 ### Who may sign in
 
-Anyone who can reach the port. There is no password check, so **do not expose it to the Internet**
-unless you mean to let strangers in. The three sane choices:
+Anyone who can reach the port. There is no password check: the sign-in takes any name with any
+password. **And the default `--bind` is `0.0.0.0`, every address the machine has** - so a default
+start on a machine with a public address lets anybody on the Internet sign in under any name, see
+your rooms and join them. Fine between friends, not fine as a public service. The three sane
+choices:
 
-- bind it to a **LAN** address and let your router keep it off the Internet (the default `--bind`
-  is `127.0.0.1`, this machine only);
+- bind it to a **LAN** address and let your router keep it off the Internet;
 - bind it to a **Tailscale or WireGuard** address, so only your own devices reach it;
 - a public address behind a **firewall** that allows only the addresses you want.
+
+`--bind 127.0.0.1` is that one machine only, which is what the ports' *two players on one PC*
+mode uses.
 
 ## Build
 
@@ -125,6 +130,15 @@ Each player's game also needs its own peer-to-peer port open between the players
 
 Not tried yet: more than two players, the other room types (Free, Shuffle), Ranked and Casual
 Match, the games' own LAN Battle mode, and anything over the Internet rather than a LAN or VPN.
+
+## Documentation
+
+- [docs/HOSTING.md](docs/HOSTING.md) - building it, running it, who can reach it, several instances
+  on one machine, keeping it running.
+- [docs/PROTOCOL.md](docs/PROTOCOL.md) - what the server really implements: packets, commands,
+  errors, room events, member and account ids, the UDP address exchange, and what is deliberately
+  missing.
+- [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) - symptoms and what each one means.
 
 ## Licence
 

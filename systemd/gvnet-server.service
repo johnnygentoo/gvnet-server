@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 # GUNDAM VERSUS' matching server for the PCs of a LAN, as a systemd user service:
 #   cp systemd/gvnet-server.service ~/.config/systemd/user/
 #   (ExecStart: where the gvnet-server binary is; the port: other PCs join at <this PC>:31323)

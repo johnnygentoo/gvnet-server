@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 # MAXIBOOST ON's matching server for the PCs of a LAN, as a systemd user service:
 #   cp systemd/mbnet-server.service ~/.config/systemd/user/
 #   (ExecStart: where the server binary is, out/gvnet-server copied as mbnet-server; the port: other PCs join at <this PC>:31333)

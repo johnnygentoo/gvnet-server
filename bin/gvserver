@@ -1,4 +1,5 @@
 #!/bin/sh
+# SPDX-License-Identifier: GPL-2.0-or-later
 # gvserver: start and stop GUNDAM VERSUS' LAN matching server (gvnet-server) by hand, like GODZILLA's
 # gzserver. The PCs' launchers join it at <this PC>:31323 ("Over the network: join").
 #   gvserver toggle | start | stop | restart | status | log [lines] | follow

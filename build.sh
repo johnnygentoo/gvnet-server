@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-2.0-or-later
 # build.sh [PROTOBUF_BUILD]: builds gvnet-server, the matching server for the GUNDAM VERSUS and
 # MAXIBOOST ON Linux ports. Nothing else is needed on the machine that runs it: no GPU library,
 # no game, no game files.
